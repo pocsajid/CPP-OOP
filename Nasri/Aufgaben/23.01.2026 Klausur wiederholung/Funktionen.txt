@@ -1,0 +1,12 @@
+Funktionen:
+
+Beispiel: float qwurzel(float z) {
+
+		// Implementierung (Logik dieser Funktion)
+          }
+
+float: Für die Rückgabe zugelassene Wertemenge (in diesem Beispiel "floats")
+qwurzel: Name der Funktion
+(float z): Anzahl der von der Funktion qwurzel erwarteten Eingabewerte (Argumente) &
+           jeweils deren Datentyp (die jeweils zugelassenen Wertemengen)
+

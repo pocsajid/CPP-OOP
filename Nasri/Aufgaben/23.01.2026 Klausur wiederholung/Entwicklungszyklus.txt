@@ -1,0 +1,15 @@
+- Entwicklungszyklus:
+	- Code schreiben bzw. überarbeiten
+	- Quellcode speichern
+	- Übersetzung anwerfen:
+		- g++ main.cpp -o ue01
+			- Schritt 1: Präprozessor läuft
+				- verarbeite alle Zeilen im Quellcode,
+				  die mit # (Raute, Gatter) anfangen
+			- Schritt 2: Output des Präprozessors geht an den
+				Compiler (Übersetzer: Quellcode nach
+					Maschinencode)
+				Output: Objektdatei
+                        - Schritt 3: Linker
+				Ausgabe: ausführbares Programm (z. b. .exe; Linux kennt keine Dateiendungen)
+

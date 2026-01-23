@@ -1,0 +1,16 @@
+- Ein und Ausgabe
+	- Eingabe:
+		std::cin >> vorname; /* Annahme: Variable vorname existiert */
+	- Ausgabe:
+		std::cout << maximum; /* Annahme: Variable maximum existiert */ 
+	- Nicht vergessen: #include <iostream>
+
+	- Ausgabe (etwas ausgebaut)
+		- std::cout << "Hallo" << ", " << "Welt!" << std::endl; /* const unsigned char endl = '\n' */
+
+	- Eingabe (etwas ausgebaut)
+		- std::cin >> vorname >> nachname;
+
+
+
+	

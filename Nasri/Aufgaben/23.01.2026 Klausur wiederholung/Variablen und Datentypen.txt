@@ -1,0 +1,69 @@
+- Variablen und Datentypen
+	- Variablen haben einen Namen
+	- Für einen Namen braucht man einen Bezeichner (= Name)
+        - Regel für die Namensvergabe:
+		- Beginnt mit Unterstrich oder Buchstabe (keine Ziffer!)
+		- Danach Ziffern oder Buchstaben
+		- Case-sensitiv (C/C++ unterscheiden Groß- und Kleinschreibung)
+			- Beispiel: alter ist ungleich Alter
+
+	- Variablen haben einen Datentyp
+		- Primitive Datetypen:
+			bool, char, int, long, float, double
+			  bool: Beispielwerte: true, false
+			  char: Beispielwerte: 'A', '7', '_', '*', ' '
+			  int: 5, 9, 17, 2, - 17, 89, -1023
+			  long: wie int, allerdings ein sehr deutlich größerer Wertebereich
+			  float: -127.23, 6.0, 1234.453625 (Fließkommazahlen bzw. Kommazahlen)
+			  double: wie float, allerdings mit einer höheren Genauigkeit
+		- unsigned, signed
+			unsigned: Nur positive Zahlen (und die Null)
+			signed (Standardeinstellung einer Variablen)
+		- const (Konstanten)
+			Variable kann nur einmal mit einem Wert beleg werden, danach
+			Wert nicht mehr änderbar (Beispiel: const unsigned int alter = 12;)
+		- Datenstrukturen (bauen auf den primitiven Datentypen auf)
+			- Arrays (1-Dimensional)
+			   - Folge von bools oder char oder int oder long oder float oder double
+		              Beispiele: int messwerte[5000];
+					 Auslesen des Wertes der 3. "Speicherbox"
+						-> messwerte[2] = 7; // alter Wert wird überschrieben
+						-> int aktuellerWert = messwerte[17];
+				-> 2-Dimensional
+					int schachbrett[8][8];
+				-> Setzen eines Wertes: schachbrett[0][0] = 1; // unten links
+							schachbrett[7][7] = 1; // oben rechts
+ 			- Structs
+				struct person {
+					unsigend int alter,
+					std::string name,
+					std::string vorname
+				};
+
+				struct person person1;
+				
+				person1.alter = 17;
+
+		- Lebensdauer & Sichtbarkeit
+			- Erklärung/Beispiel (Lebensdauer):
+				{
+					int a;
+				}
+					
+				{
+					/* In diesem Codeblock Zugriff auf Variable a nicht möglich, da abereits zerstört. */
+					int b;
+				}
+			- Erklärung/Beispiel (Sichtbarkeit)
+				int main() {
+					int z;
+
+					if (z == 1) {
+						int a;
+						int z; /* Überdeckt die Variable z im äußeren Codeblock */
+						
+						z = 5;
+					}
+				}
+				
+			

@@ -1,0 +1,41 @@
+- Klassen
+	
+	Beispiel:
+		class Auto {
+
+			private:
+			   unsigend int ps;
+			   float maxGeschwindigkeit;
+			   float gewicht;
+			   std::string farbe;
+			   bool istGestartet;
+
+			public:
+			   Auto() { /* Standardkonstruktur */
+				ps = 50;
+				farbe = rot;
+			   }
+			   Auto(unsigend int ps, std::string farbe) {
+				this->ps = ps;
+				this->farbe = farbe;
+			   }
+
+			   Auto(unsigend int ps) {
+				this->ps = ps;
+			   }
+
+			   void starten() {
+				istGestartet = true;
+			   }
+
+			   void fahren() {
+			   }
+
+			   void bremsen() {
+			   }
+
+			   void hupen() {
+			
+			   }	
+
+		};
