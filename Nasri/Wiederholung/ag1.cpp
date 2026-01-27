@@ -18,4 +18,5 @@ int gebezahl() {
     cout << "Geben Sie bitte eine Zahl ein: ";
     cin >> zahl;
     return zahl;   // VISSZAADJUK
+    
 }
