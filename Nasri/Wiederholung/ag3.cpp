@@ -1,10 +1,10 @@
 #include <iostream>
-    int add(int a, int b){
+    int summe(int a, int b){
         return a + b;
     }
 
 
-    int subst(int a, int b){
+    int differenz(int a, int b){
         return a - b;
     }
 
@@ -37,8 +37,54 @@
 
 
 
+
+
 int main(){
 
+    int a, b;
+    int wahl;
+
+
+    do(){
+        menu();
+        std::cin>>wahl;
+
+        if(wahl == 0){
+            std::cout<<"Program beendet\n";
+            break;
+        }
+
+        std::cout<<"Geben Sie a ein!: ";
+        std::cin>>a;
+
+        std::cout<<"Geben Sie b ein!: ";
+        std::cin>>b;
+
+
+
+    }
+
+    switch (wahl){
+        case 1: 
+        std::cout<< "Summe: " << summe(a, b)<< '\n';
+        break;
+
+        case 2:
+        std::cout<< "Differenz: "<< differenz(a, b)<<'\n';
+        break;
+
+        case 3:
+        std::cout<< "Multiplizierung: " << multi(a, b)<<'\n';
+        break;
+
+        case 4:
+        std::cout<<"Substraktion: "<< divi(a, b)<<'\n';
+        break;
+
+        default:
+        std::cout << "Ungültige Auswahl!\n";   
+
+    }
 
 
 
